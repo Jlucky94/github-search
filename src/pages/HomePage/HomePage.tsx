@@ -51,7 +51,7 @@ const HomePage = () => {
                 </ul>}
                 <div className="container">
                     {areReposLoading && <p className="text-center">Repos are loading...</p>}
-                    {repos?.map(repo => <RepoCard repo={repo}/>)}
+                    {repos?.map(repo => <RepoCard repo={repo} key={repo.id}/>)}
                 </div>
             </div>
         </div>
